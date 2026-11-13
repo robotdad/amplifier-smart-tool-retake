@@ -1,5 +1,7 @@
 # Reusable scene pipeline
 
+For the proposed Amplifier smart-tool layer, start with [docs/VISION.md](docs/VISION.md), the [contracts](contracts/scene-editing.md) and [current work record](docs/WORK-RECORD.md). These apply Amplifier Converge and distinguish the agreed first scope from draft connection details. The runner documented below is the existing component, not a completed natural-language agent experience.
+
 Manifest-driven dialogue replacement with original faces and room sound. Runs on Ducasse using the existing isolated environments. No project-specific Python edits are needed for another scene.
 
 The scene file supplies the source, source/replacement dialogue, cue timing, visible-speaker intervals, selected seeds or existing takes, protected audio, optional image inserts and an end card. The pipeline generates speech, checks words, mixes audio, applies mouth-only lip sync, finishes and verifies exports.
