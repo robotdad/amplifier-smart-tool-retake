@@ -1,0 +1,37 @@
+{
+  "kind": "tool",
+  "key": "retake",
+  "identity": {"name": "Retake", "owner": "robotdad", "repository": "amplifier-smart-tool-retake"},
+  "title": "Retake | Same scene. New line.",
+  "name": "Retake",
+  "accent": "#a84130",
+  "promise": "Rewrite the dialogue. Keep the performance.",
+  "description": "Give a scene a different line while keeping its original faces, acting and room sound. Retake's local editing pipeline is available; the natural-language smart-tool experience is in development.",
+  "image": "site/assets/retake-static.png",
+  "animation": "site/assets/retake-loop.gif",
+  "mark": "site/assets/retake-mark.svg",
+  "alt": "Retake's R speech mark. Old line is crossed out and replaced with New line while the frame and wordmark stay fixed.",
+  "width": 1200,
+  "height": 720,
+  "caption": "Motion identity, authored in HyperFrames. Illustration, not a scene-generation demo.",
+  "flow_title": "Same scene.\nA different conversation.",
+  "flow_intro": "The current pipeline accepts a scene file with timed dialogue and explicit visible-speaker intervals. It carries the edit through speech, sound, mouth animation and comparison exports.",
+  "steps": [
+    ["Give it the scene and the lines.", "Supply an original clip, its dialogue and the replacement words. Mark protected reactions and identify when the speaker is visible."],
+    ["Keep each performance distinct.", "Each exchange conditions its own speech edit. Questions, shouts and pauses get individual takes instead of one recycled word."],
+    ["Change the mouth, keep the face.", "Composite generated movement through a tracked mouth mask. Off-screen lines leave visible listeners alone."],
+    ["Compare before you call cut.", "Review new audio over original picture, the mouth-only version and the finished edit. Keep earlier takes and target the next revision."]
+  ],
+  "detail_title": "A little rewrite.\nA lot worth keeping.",
+  "details": [
+    ["The actor stays.", "Original faces and source performances guide the edit. Face swapping is outside the first scope."],
+    ["The room stays.", "Start with the original soundtrack. Protect laughter and reactions, and replace foreground only in selected intervals. Separation under speech remains approximate."],
+    ["The evidence stays.", "Keep source identity, selected takes, timings, render settings and comparison exports. File checks support review; they do not prove a convincing performance."]
+  ],
+  "prompt": "Use Retake's local pipeline to replace these lines in this scene. Preserve each original delivery, keep the room sound and laughter, and animate only the visible speaker. Give me the original picture with the new audio as well.",
+  "install": "git clone https://github.com/robotdad/amplifier-smart-tool-retake.git\n# Requires an already configured local GPU environment.\n# Read docs/ENVIRONMENT.md, then use Run-Retake.ps1.",
+  "prerequisites": "The current runner targets a configured Windows GPU workstation. This repository does not install the model runtimes or download their weights.",
+  "model_note": "Next: Outtake-powered discovery and automatic scene preparation through Amplifier Agent. Those capabilities are proposed, not implemented. Voice likeness and lip quality still need listening and playback review.",
+  "guide": "README.md",
+  "related": ["outtake", "unfold"]
+}

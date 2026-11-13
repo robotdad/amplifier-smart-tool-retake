@@ -6,7 +6,7 @@ The agreed first scope is source-performance dialogue replacement and mouth-only
 
 This checkout is the canonical Retake source. Runtime/model installations are outside it in the surrounding media workspace. Read docs/ENVIRONMENT.md before changing paths or dependencies. Preserve existing runtimes, CUDA DLL paths, media projects, cached models and phone delivery services. The other agent owns the DGX Sparks. Do not modify remote hosts as routine Retake work.
 
-Ordinary reversible implementation and documentation work within an assignment does not need repeated approval. Changes to shared promises, provider disclosure, remote ownership or publication scope must respect the existing authority. Private repository setup was authorized; that is not authority to make it public or deploy services.
+Ordinary reversible implementation and documentation work within an assignment does not need repeated approval. Changes to shared promises, provider disclosure, remote ownership or publication scope must respect the existing authority. Marc explicitly authorized making Retake public and publishing its GitHub Pages site. This does not authorize unrelated service deployments or Spark changes. Website work uses the vendored family theme and site/README.md; keep shared theme files unchanged and product-specific behavior in the local adapter.
 
 For code changes, run test_pipeline.py through the existing FaceFusion Python environment. Use bounded examples for meaningful stage/integration changes and record the actual version/limits. Documentation changes need link checks and an applicable scenario walkthrough, not fresh GPU renders. Do not call ASR/decode/mask checks proof of creative quality.
 

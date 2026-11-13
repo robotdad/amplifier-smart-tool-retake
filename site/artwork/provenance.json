@@ -1,0 +1,37 @@
+{
+  "authoring": "Native HTML/SVG + GSAP, rendered locally in HyperFrames; no Unfold agent/provider session",
+  "hyperframes": "0.8.33",
+  "gsap": "3.14.2",
+  "node": "22.23.5",
+  "duration_seconds": 6,
+  "master": {
+    "width": 1200,
+    "height": 720,
+    "fps": 30,
+    "frames": 180
+  },
+  "gif": {
+    "width": 1000,
+    "height": 600,
+    "fps": 15
+  },
+  "static_frame_seconds": 3.2,
+  "assets": {
+    "retake-loop.gif": {
+      "bytes": 131316,
+      "sha256": "24c95ae28fed70949b9a7b08aaf26b55faf9d38f0783e0a425c91fc55a0e0c1a"
+    },
+    "retake-loop.mp4": {
+      "bytes": 69828,
+      "sha256": "bb0f98bbe2d874ace329e5fcffd0c41ccc5b67c58c36096bbe96ee5ffc41ae40"
+    },
+    "retake-mark.svg": {
+      "bytes": 500,
+      "sha256": "684eb740b7958960b40739dbe99a2d3892cc1a46482fbcf80f2c8fec97bd1bb3"
+    },
+    "retake-static.png": {
+      "bytes": 95789,
+      "sha256": "5be8d96cfad3c1e06550b9497bf8175ec93674ffc3033821e35346daff28196e"
+    }
+  }
+}

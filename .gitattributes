@@ -1,0 +1,5 @@
+site/** text=auto eol=lf
+.github/** text eol=lf
+*.png binary
+*.gif binary
+*.mp4 binary

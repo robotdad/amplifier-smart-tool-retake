@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/microsoft/amplifier-smart-tools",
+  "revision": "6f0d00c987eeaf9b56b142d74fd5738888c5686a",
+  "directory": "site/theme",
+  "license": "MIT",
+  "files": {
+    "build.py": "ac93089720c9a4ac61d4dba99e14064517faa575dd4a56d0220c77b88cd09a58",
+    "catalog_metadata.py": "a91d9489817aef3edfb6e65710e94b58a6a0b053be51570945cc535ac248f701",
+    "family.json": "3d326cc195e767e6a89efc894802692d9d0afb2ea0b9119c18d588cc78006986",
+    "LICENSE": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "site.js": "840e619e1708d5c9debc9b76b7f83620b6920d70f1bdc9c59c68caebeeb07b65",
+    "style.css": "747e554913f98d918863299e92c9436acc123b8f41a5f9db32e2f4c5789c5ac8",
+    "assets/mark-loop.gif": "5d56ab191e9da10c3e1505e5809cc171d5e255747797101a5f71b6ee9121206e",
+    "assets/mark-loop.mp4": "30ffe769b1ed48821a0209b5c6c2f812e1f6a060ca22be44da3d39c936f3641a",
+    "assets/mark-loop.png": "778da2e4475e1bfb64cc8add3ebd599d3892db08b47c568291e8e9a4cfc8f7e0"
+  },
+  "text_hash_policy": "LF line endings, matching canonical Git source; binary hashes are exact"
+}

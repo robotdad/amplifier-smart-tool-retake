@@ -11,3 +11,10 @@ profiles/local*.json
 *.mkv
 *.onnx
 *.safetensors
+node_modules/
+_site/
+.work/
+site/artwork/snapshots/
+site/artwork/.hyperframes/
+!site/assets/*.mp4
+!site/theme/assets/*.mp4

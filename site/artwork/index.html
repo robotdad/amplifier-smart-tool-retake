@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Retake / Same scene. New line.</title>
+<script src="./node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+#root{position:relative;width:1200px;height:720px;background:#f6f4ee;color:#252823;font-family:Arial,Helvetica,sans-serif}
+.frame{position:absolute;left:60px;top:124px;width:1080px;height:440px}
+.corner{position:absolute;width:28px;height:28px;border-color:#b8baad;border-style:solid;border-width:0}
+.tl{top:0;left:0;border-top-width:1px;border-left-width:1px}.tr{top:0;right:0;border-top-width:1px;border-right-width:1px}
+.bl{bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}.br{bottom:0;right:0;border-bottom-width:1px;border-right-width:1px}
+.overline{position:absolute;left:90px;top:70px;font:15px 'Courier New',monospace;letter-spacing:3px}
+.red-dot{display:inline-block;width:8px;height:8px;background:#b64a36;margin-right:12px}
+#mark{position:absolute;left:110px;top:182px;width:300px;height:300px}
+.wordmark{position:absolute;left:466px;top:229px;font-size:125px;font-weight:800;letter-spacing:-8px;line-height:1}
+.line{position:absolute;left:474px;top:383px;font-size:29px;letter-spacing:-.6px;white-space:nowrap}
+.replacement{position:absolute;left:186px;top:0;width:220px;height:45px}
+#old,#new{position:absolute;left:0;top:0}#new{color:#b64a36;opacity:0;transform:translateY(14px)}
+#strike{position:absolute;left:-3px;top:18px;width:113px;height:2px;background:#b64a36;transform:scaleX(0);transform-origin:left}
+.rule{position:absolute;left:90px;top:615px;width:1020px;height:1px;background:#d8d8cc}
+.bottom{position:absolute;top:637px;font:12px 'Courier New',monospace;letter-spacing:1px}
+.left{left:90px}.right{right:90px}#take2{display:none}
+</style></head><body>
+<main id="root" data-composition-id="retake" data-start="0" data-width="1200" data-height="720" data-duration="6" data-fps="30">
+  <div class="overline"><i class="red-dot"></i>A SECOND TAKE ON THE FIRST TAKE.</div>
+  <div class="frame"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i></div>
+  <svg id="mark" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Retake R speech mark">
+    <path fill="#252823" fill-rule="evenodd" d="M72 50H207C279 50 321 86 321 149C321 196 296 228 254 242L338 350H250L176 251H147V350H72ZM147 111V192H202C231 192 246 178 246 151C246 125 230 111 202 111Z"/>
+    <path id="leg" fill="#b64a36" d="M176 251H254L338 350H250Z"/>
+    <path fill="#f6f4ee" d="M148 172H178L148 207Z"/>
+  </svg>
+  <div class="wordmark">Retake<span style="color:#b64a36">.</span></div>
+  <div class="line">Same scene.<span class="replacement"><span id="old">Old line.</span><span id="strike"></span><span id="new">New line.</span></span></div>
+  <div class="rule"></div>
+  <div class="bottom left">THE PERFORMANCE STAYS. <span style="color:#b64a36">THE WORDS DON'T.</span></div>
+  <div class="bottom right"><span id="take1">TAKE 01</span><span id="take2">TAKE 02</span></div>
+</main>
+<script>
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+tl.to('#strike',{scaleX:1,duration:.3,ease:'power2.out'},1.0)
+  .to('#old',{opacity:0,y:-12,duration:.25,ease:'power2.in'},1.35)
+  .to('#strike',{opacity:0,duration:.12},1.48)
+  .to('#new',{opacity:1,y:0,duration:.35,ease:'power3.out'},1.55)
+  .to('#leg',{x:7,y:4,duration:.15,ease:'power1.in'},1.35)
+  .to('#leg',{x:0,y:0,duration:.32,ease:'power3.out'},1.5)
+  .set('#take1',{display:'none'},1.55).set('#take2',{display:'inline'},1.55)
+  .to('#new',{opacity:0,y:10,duration:.25},5.1)
+  .set('#strike',{scaleX:0,opacity:1},5.4)
+  .to('#old',{opacity:1,y:0,duration:.3},5.45)
+  .set('#take1',{display:'inline'},5.6).set('#take2',{display:'none'},5.6)
+  .to({},{duration:6},0);
+window.__timelines.retake=tl;
+</script></body></html>

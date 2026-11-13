@@ -1,0 +1,7 @@
+/* Product-specific content treatment. Shared family theme remains unchanged. */
+.retake-status{border-left:3px solid var(--accent);padding:16px 22px;margin:34px 0 0;background:#efeee7;font-size:14px;color:var(--muted)}
+.retake-status strong{color:var(--ink)}
+.retake-identity{background:var(--paper)}
+.product-image:has(.retake-identity){background:var(--paper);padding:0}
+.image-caption .demo-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:620px){.image-caption{flex-direction:column;gap:10px}.image-caption .demo-actions{justify-content:flex-start}.retake-status{margin-top:25px}}
