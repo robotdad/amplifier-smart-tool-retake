@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "name": "supplied-take-smoke",
+  "source": {
+    "path": "../../projects/being-amplifier/source/export_c27138af05c84eb9b62bcb5287e0fed0/restaurant-original.mp4",
+    "start": 16,
+    "end": 18.2
+  },
+  "output_dir": "../../projects/pipeline-smoke/runs",
+  "settings": {},
+  "protected_audio": [[0, 0.5], [1.85, 2.1]],
+  "cues": [
+    {
+      "id": "question",
+      "speaker": "companion",
+      "start": 0.585,
+      "end": 1.793,
+      "source_text": "Malkovich?",
+      "target_text": "Amplifier?",
+      "take": {"path": "../../projects/being-amplifier/revision-2/cue-05-selected.wav"},
+      "lips": []
+    }
+  ],
+  "inserts": [
+    {"start": 0, "end": 0.4, "image": "../../projects/being-amplifier/menu-insert/amplifier-menu.png", "zoom_start": 1.0, "zoom_end": 1.02}
+  ]
+}

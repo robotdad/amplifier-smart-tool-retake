@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "name": "restaurant-smoke",
+  "source": {
+    "path": "../../projects/being-amplifier/source/export_c27138af05c84eb9b62bcb5287e0fed0/restaurant-original.mp4",
+    "start": 16,
+    "end": 18.2,
+    "foreground": "../../projects/being-amplifier/performance-edit/foreground-stems/original-center_(Vocals)_UVR-MDX-NET-Inst_HQ_3.wav"
+  },
+  "output_dir": "../../projects/pipeline-smoke/runs",
+  "settings": {},
+  "protected_audio": [[0, 0.5], [1.85, 2.1]],
+  "cues": [
+    {
+      "id": "question",
+      "speaker": "companion",
+      "start": 0.585,
+      "end": 1.793,
+      "source_text": "Malkovich?",
+      "target_text": "Amplifier?",
+      "seeds": [210],
+      "selected_seed": 210,
+      "lips": [{"start": 0.585, "end": 1.793, "speaker": "companion", "face_order": "left-right"}]
+    }
+  ],
+  "inserts": [],
+  "title": {
+    "image": "../../projects/being-amplifier/revision-2/title-card.png",
+    "duration": 2,
+    "scene_fade": 0.25,
+    "fade_in": 0.3,
+    "fade_out": 0.3
+  }
+}

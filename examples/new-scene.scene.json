@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "new-scene",
+  "source": {"path": "source.mp4"},
+  "output_dir": "runs",
+  "settings": {},
+  "protected_audio": [],
+  "cues": [
+    {
+      "id": "line-01",
+      "speaker": "speaker-a",
+      "start": 1,
+      "end": 3,
+      "source_text": "Original dialogue.",
+      "target_text": "Replacement dialogue.",
+      "seeds": [42, 43],
+      "selected_seed": 42,
+      "lips": []
+    }
+  ],
+  "inserts": []
+}
