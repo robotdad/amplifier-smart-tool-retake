@@ -161,3 +161,5 @@ Models must already exist locally. HF_HUB_OFFLINE=1 is set in workers. Missing c
 ```
 
 The smoke scene extracts a short existing original shot, generates a fresh question, protects two room-audio intervals, renders a visible-speaker mouth pass and appends the existing title image. It writes only under projects/pipeline-smoke/runs and leaves all Being Amplifier outputs intact. The populated foreground stem is supplied to avoid repeating full-scene separation in this example.
+
+Both the fresh-generation example and examples/supplied-take.scene.json passed end to end through the PowerShell entry point. Eleven regression tests passed. The latter example exercises automatic foreground separation, an existing WAV, explicit no-lip handling and an image insert. Cache reuse and hash-mismatch recovery were also tested. Exact outputs and remaining coverage limits are in [VALIDATION.md](VALIDATION.md).
