@@ -1,6 +1,6 @@
 # Scene editing and caller interaction
 
-Draft proposal. For the calling agent, the dialogue smart tool, Outtake and the person reviewing the result. Marc owns product direction. The local implementation owns integration within the agreed scope; it does not change Outtake's promises or Spark configuration unilaterally.
+Draft behavioral proposal for Retake (amplifier-smart-tool-retake). The product name and voice/mouth-only first scope are agreed; detailed connection promises below remain proposals. For the calling agent, Retake, Outtake and the person reviewing the result. Marc owns product direction. The local implementation owns integration within the agreed scope; it does not change Outtake's promises or Spark configuration unilaterally.
 
 ## Promises
 

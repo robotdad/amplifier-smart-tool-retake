@@ -1,6 +1,6 @@
 # Execution, revision, verification and delivery
 
-Draft proposal. For the tool's job owner, render pipeline, caller and reviewer. The dialogue tool remains accountable for the combined result until a usable output or an honest unresolved outcome is returned. Dispatching a backend job does not establish completion.
+Draft behavioral proposal for Retake (amplifier-smart-tool-retake). The product name and voice/mouth-only first scope are agreed; detailed connection promises below remain proposals. For the tool's job owner, render pipeline, caller and reviewer. Retake remains accountable for the combined result until a usable output or an honest unresolved outcome is returned. Dispatching a backend job does not establish completion.
 
 ## Promises
 

@@ -1,12 +1,12 @@
-# Smart-tool work record
+# Retake work record
 
 Updated 2026-11-12. Governing methodology is [Amplifier Converge](https://github.com/microsoft/amplifier-converge/tree/e39fe7676ba88737319bca21af78dd0f819eb8a3), inspected at e39fe7676ba88737319bca21af78dd0f819eb8a3. Read its vision, six contracts, agent/reviewer guides and writing guide. The reference checkout is C:\robotdad\media\reference\amplifier-converge. This application is a document/scenario review, not live smart-tool verification.
 
 ## Direction and authority
 
-Marc owns product direction. The accepted first focus from this conversation is dialogue replacement and mouth-only lip sync, retaining original faces, using Outtake for scene discovery and the existing local pipeline for rendering. Face swap is deferred. Follow Converge for further work.
+Marc owns product direction. Retake is the agreed name, with private GitHub repository robotdad/amplifier-smart-tool-retake and canonical local folder C:\robotdad\media\amplifier-smart-tool-retake. Repository creation/private push and workspace housekeeping are explicitly authorized. The accepted first focus from this conversation is dialogue replacement and mouth-only lip sync, retaining original faces, using Outtake for scene discovery and the existing local pipeline for rendering. Face swap is deferred. Follow Converge for further work.
 
-The draft [vision](VISION.md) and [contracts](../contracts/scene-editing.md) make proposed behavior reviewable. They do not turn prior architectural suggestions into accepted detailed commitments or authorize publishing, new paid-provider use, deployment or Spark administration. The local implementation can prepare/review these drafts and investigate existing capabilities within current authority. The other agent retains Spark ownership.
+The draft [vision](VISION.md) and [contracts](../contracts/scene-editing.md) make proposed behavior reviewable. They do not turn prior architectural suggestions into accepted detailed commitments or authorize public publication, new paid-provider use, deployment or Spark administration. Private GitHub setup is separately authorized above. The local implementation can prepare/review these drafts and investigate existing capabilities within current authority. The other agent retains Spark ownership.
 
 ## Current reality
 
@@ -20,7 +20,7 @@ The draft [vision](VISION.md) and [contracts](../contracts/scene-editing.md) mak
 
 Prepare one narrow connected outcome: a described moment in a known title plus a bounded replacement instruction produces a retained proposed edit, with Outtake source evidence and automatic timing/speaker preparation, then the existing render comparisons. Include an off-screen exchange and protected laughter in its verification. Keep automatic image editing optional and face swap outside the first implementation.
 
-The next implementation assignment should name its owner, execution/provider scope and limits, connection versions, completion evidence and recovery behavior. No new implementation assignment or workers were started by this methodology review.
+The next implementation assignment should name its owner, execution/provider scope and limits, connection versions, completion evidence and recovery behavior. Current assignment is naming/repository setup, updating direction/contract documents and making the workspace understandable. It does not start implementation of the unbuilt agent layer or assign Spark work.
 
 | Boundary | Gap exposed by review | Proposed home / consequence |
 | --- | --- | --- |
@@ -37,3 +37,7 @@ Exact schemas, provider routing, transcription/alignment/speaker mechanisms, job
 For "find the restaurant scene and change each spoken name," the proposed contracts allow bounded Outtake discovery, preserve candidate/occurrence identity, build per-performance edits and leave off-screen listeners alone. A laugh between words becomes a protected interval, not synthesized laughter. With no image-edit capability, the dialogue path still works and the requested menu change is reported as unavailable or uses explicitly supplied artwork. A follow-up targets a particular retained revision/exchange; it cannot silently rewrite a different cut. A dropped backend acknowledgement leads to inspecting the job before retrying.
 
 This tabletop walkthrough supports clarity of the draft, not proof those behaviors execute. Live acceptance still needs the connected outcome above. Review found no need for routine human sign-off on cue preparation, bounded retries or ordinary implementation choices within standing authority. Consequential new scope stays distinguishable from those choices.
+
+## Repository and workspace setup
+
+The former scene-pipeline repository was moved to amplifier-smart-tool-retake with history intact. Old-path launchers forward to the canonical project. Workspace README.md and AGENTS.md identify source ownership, installed runtimes, shared caches, reference checkouts and retained experiments. Setup/playbook/Spark guides remain authoritative workspace documents and link the new project. No runtime/model directory or existing media deliverable was moved. See ENVIRONMENT.md for this installation boundary.

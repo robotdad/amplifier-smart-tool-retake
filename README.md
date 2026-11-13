@@ -1,31 +1,33 @@
-# Reusable scene pipeline
+# Retake
 
-For the proposed Amplifier smart-tool layer, start with [docs/VISION.md](docs/VISION.md), the [contracts](contracts/scene-editing.md) and [current work record](docs/WORK-RECORD.md). These apply Amplifier Converge and distinguish the agreed first scope from draft connection details. The runner documented below is the existing component, not a completed natural-language agent experience.
+Rewrite the dialogue. Keep the performance.
+
+Retake is the agreed product name; amplifier-smart-tool-retake is the repository. For the proposed Amplifier smart-tool layer, start with [docs/VISION.md](docs/VISION.md), the [contracts](contracts/scene-editing.md) and [current work record](docs/WORK-RECORD.md). These apply Amplifier Converge and distinguish the agreed first scope from draft connection details. The runner documented below is the existing component, not a completed natural-language agent experience.
 
 Manifest-driven dialogue replacement with original faces and room sound. Runs on Ducasse using the existing isolated environments. No project-specific Python edits are needed for another scene.
 
 The scene file supplies the source, source/replacement dialogue, cue timing, visible-speaker intervals, selected seeds or existing takes, protected audio, optional image inserts and an end card. The pipeline generates speech, checks words, mixes audio, applies mouth-only lip sync, finishes and verifies exports.
 
-For the production reasoning and exact Being Amplifier history, see [SCENE-EDITING-PLAYBOOK.md](../SCENE-EDITING-PLAYBOOK.md). Installed dependencies are in [LOCAL-SETUP.md](../LOCAL-SETUP.md). DGX Spark provisioning advice remains in [PRODUCTION-WORKFLOW.md](../PRODUCTION-WORKFLOW.md#spark-agent-setup-request). This pipeline does not install or change services on the Sparks.
+Machine layout, installed dependencies and the surrounding production guides are described in [docs/ENVIRONMENT.md](docs/ENVIRONMENT.md). DGX Spark advice remains in the local workspace PRODUCTION-WORKFLOW.md under Spark agent setup request. Retake does not install or change services on the Sparks.
 
 ## Quick start
 
 Run in PowerShell from C:\robotdad\media. Put a source clip beside the new scene JSON, or use an absolute source path.
 
 ```powershell
-.\scene-pipeline\Run-Scene.ps1 init .\projects\next-scene\scene.json
+.\amplifier-smart-tool-retake\Run-Retake.ps1 init .\projects\next-scene\scene.json
 # Edit scene.json with the source, original dialogue, replacement dialogue and times.
-.\scene-pipeline\Run-Scene.ps1 validate .\projects\next-scene\scene.json
-.\scene-pipeline\Run-Scene.ps1 plan .\projects\next-scene\scene.json
-.\scene-pipeline\Run-Scene.ps1 run .\projects\next-scene\scene.json -Through mix
+.\amplifier-smart-tool-retake\Run-Retake.ps1 validate .\projects\next-scene\scene.json
+.\amplifier-smart-tool-retake\Run-Retake.ps1 plan .\projects\next-scene\scene.json
+.\amplifier-smart-tool-retake\Run-Retake.ps1 run .\projects\next-scene\scene.json -Through mix
 # Audition selected speech and the room mix before full rendering.
-.\scene-pipeline\Run-Scene.ps1 run .\projects\next-scene\scene.json
+.\amplifier-smart-tool-retake\Run-Retake.ps1 run .\projects\next-scene\scene.json
 ```
 
 The first command creates parent directories and refuses to overwrite an existing manifest. Edit JSON data only. The same CLI works directly through the existing Python runtime if PowerShell script execution is unavailable.
 
 ```powershell
-& .\facefusion\.venv\Scripts\python.exe .\scene-pipeline\scene_pipeline.py run .\projects\next-scene\scene.json --through mix
+& .\facefusion\.venv\Scripts\python.exe .\amplifier-smart-tool-retake\scene_pipeline.py run .\projects\next-scene\scene.json --through mix
 ```
 
 `run` executes every prerequisite through the requested stage. Stages are prepare, generate, check, mix, lips, finish and verify. `-Through generate` leaves all candidate WAVs for auditioning. `-Through check` adds ASR reports. Change selected_seed or point take.path to the chosen file, then rerun. The manifest and input hashes determine a new output directory when inputs/settings change.
@@ -158,8 +160,8 @@ Models must already exist locally. HF_HUB_OFFLINE=1 is set in workers. Missing c
 ## Tests and example
 
 ```powershell
-& .\facefusion\.venv\Scripts\python.exe -m unittest discover -s scene-pipeline -v
-.\scene-pipeline\Run-Scene.ps1 run .\scene-pipeline\examples\smoke.scene.json
+& .\facefusion\.venv\Scripts\python.exe -m unittest discover -s amplifier-smart-tool-retake -v
+.\amplifier-smart-tool-retake\Run-Retake.ps1 run .\amplifier-smart-tool-retake\examples\smoke.scene.json
 ```
 
 The smoke scene extracts a short existing original shot, generates a fresh question, protects two room-audio intervals, renders a visible-speaker mouth pass and appends the existing title image. It writes only under projects/pipeline-smoke/runs and leaves all Being Amplifier outputs intact. The populated foreground stem is supplied to avoid repeating full-scene separation in this example.

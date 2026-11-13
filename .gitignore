@@ -2,3 +2,12 @@ __pycache__/
 *.pyc
 runs/
 *.log
+.env
+.env.*
+!.env.example
+profiles/local*.json
+*.wav
+*.mp4
+*.mkv
+*.onnx
+*.safetensors

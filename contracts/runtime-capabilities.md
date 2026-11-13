@@ -1,6 +1,6 @@
 # Local environment, agent and backend capabilities
 
-Draft proposal. For the dialogue tool, environment administrator, Amplifier agent integration and generation/render adapters. The Windows implementation owns Ducasse integration. The existing Spark agent owns Spark provisioning; describing a remote worker is not authority to change that host.
+Draft behavioral proposal for Retake (amplifier-smart-tool-retake). The product name and voice/mouth-only first scope are agreed; detailed connection promises below remain proposals. For Retake, environment administrator, Amplifier agent integration and generation/render adapters. The Windows implementation owns Ducasse integration. The existing Spark agent owns Spark provisioning; describing a remote worker is not authority to change that host.
 
 ## Promises
 
