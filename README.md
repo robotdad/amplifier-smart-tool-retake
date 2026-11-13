@@ -2,6 +2,8 @@
 
 Rewrite the dialogue. Keep the performance.
 
+Private source repository: [robotdad/amplifier-smart-tool-retake](https://github.com/robotdad/amplifier-smart-tool-retake).
+
 Retake is the agreed product name; amplifier-smart-tool-retake is the repository. For the proposed Amplifier smart-tool layer, start with [docs/VISION.md](docs/VISION.md), the [contracts](contracts/scene-editing.md) and [current work record](docs/WORK-RECORD.md). These apply Amplifier Converge and distinguish the agreed first scope from draft connection details. The runner documented below is the existing component, not a completed natural-language agent experience.
 
 Manifest-driven dialogue replacement with original faces and room sound. Runs on Ducasse using the existing isolated environments. No project-specific Python edits are needed for another scene.

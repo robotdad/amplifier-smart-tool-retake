@@ -17,3 +17,7 @@ Checked on Ducasse on 2026-11-12, using the existing RTX 4080 environments. No d
 Each run contains its own verification.json, mix-receipt.json, lips-receipt.json, resolved manifest, identity inventory and stage logs. A previous test caught a one-frame loss at the title join; explicit frame-based timestamping fixed it, and the final test above passed.
 
 The two examples exercise the installed six-channel source. Mono/stereo handling, different actors/languages, profiles/occlusions, long scenes and other models are implemented/configurable where documented but have not received this example's end-to-end or perceptual validation. Overlapping speakers are intentionally rejected. Timings, transcripts, protected intervals and visible-speaker selection remain editorial inputs. Concurrent writers to one run directory are unsupported.
+
+## Canonical Retake checkout
+
+After moving the source to amplifier-smart-tool-retake, all eleven regression tests passed again. Run-Retake.ps1 validated the original smoke manifest, and the old scene-pipeline/Run-Scene.ps1 forwarding launcher successfully planned the supplied-take example. The canonical Run-Retake.ps1 then ran the supplied-take/separation/no-lips/insert example through verify in projects/pipeline-smoke/runs/supplied-take-smoke-978255bf28a9353f. Historical run directories and receipts above remain unchanged. No earlier creative deliverable or runtime/model directory was moved.
